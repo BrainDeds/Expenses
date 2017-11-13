@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Expenses Calculator</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_sort">Sort List</string>
+    <string name="action_add">Add Item</string>
+    <string name="action_clear">Clear Items</string>
+    <string name="title_activity_expense_calculator">ExpenseCalculator</string>
+    <string name="title_activity_tips_and_tricks">TipsAndTricks</string>
+    <string name="button">Button</string>
+</resources>

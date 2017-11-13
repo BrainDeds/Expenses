@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.asus.expensescalculator.ExpenseCalculator">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        android:id="@+id/appBarLayout2">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bg2"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    />
+    <Button
+        android:id="@+id/Add_Expense"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="27dp"
+        android:layout_marginStart="27dp"
+        android:text="@string/action_add"
+        android:layout_marginTop="14dp"
+        android:layout_below="@+id/expense_edittext"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:id="@+id/item_name_edittext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/Add_Expense"
+        android:layout_alignStart="@+id/Add_Expense"
+        android:layout_below="@+id/appBarLayout2"
+        android:ems="10"
+        android:inputType="text"
+        android:hint="Name of Item"
+        android:fontFamily="sans-serif-medium"/>
+
+    <EditText
+        android:id="@+id/expense_edittext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/item_name_edittext"
+        android:layout_alignLeft="@+id/item_name_edittext"
+        android:layout_alignRight="@+id/item_name_edittext"
+        android:layout_alignStart="@+id/item_name_edittext"
+        android:layout_below="@+id/item_name_edittext"
+        android:layout_marginTop="13dp"
+        android:ems="10"
+        android:inputType="text"
+        android:fontFamily="sans-serif-medium"
+        android:hint="Cost"/>
+
+    <TextView
+        android:id="@+id/total_expenses_box"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:hint="Total Cost"
+        android:textAppearance="@android:style/TextAppearance.Material.Large"
+        android:layout_below="@+id/tax_button"
+        android:layout_toRightOf="@+id/clear_button"
+        android:layout_toEndOf="@+id/clear_button"
+        android:layout_marginLeft="17dp"
+        android:layout_marginStart="17dp" />
+
+    <Button
+        android:id="@+id/clear_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/action_clear"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/Add_Expense"
+        android:layout_alignStart="@+id/Add_Expense"
+        android:layout_marginBottom="108dp" />
+
+    <EditText
+        android:id="@+id/tax_editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/expense_edittext"
+        android:layout_alignRight="@+id/expense_edittext"
+        android:layout_below="@+id/Add_Expense"
+        android:layout_marginTop="18dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:hint="Tax"
+        android:fontFamily="sans-serif-medium"/>
+
+    <Button
+        android:id="@+id/tax_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/Add_Expense"
+        android:layout_alignRight="@+id/Add_Expense"
+        android:layout_below="@+id/tax_editText"
+        android:layout_marginTop="30dp"
+        android:text="Add Tax" />
+
+
+</RelativeLayout>
